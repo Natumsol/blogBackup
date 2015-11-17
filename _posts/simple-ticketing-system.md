@@ -49,18 +49,22 @@ srcStationId:乘车区间的发站
 destStationId:乘车区间的到站
 ```
 ### 输出
-```javascript
+
+```
 包含指定乘车区间的待售火车票，包含与指定区间完全相同的火车票。如果没有则返回0,入参非法也返回0。
 ```
+
 ## 输入输出模拟
+
 ```javascript 输入示例：
-	6
-	1 2 3 4 5 6 
-	10
-	findleftTickets 1 6
-	sellTicket 1 6
-	findleftTickets 1 6
+6
+1 2 3 4 5 6 
+10
+findleftTickets 1 6
+sellTicket 1 6
+findleftTickets 1 6
 ```
+
 
 ```javascript 输出示例：
 	10
