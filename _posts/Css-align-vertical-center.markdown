@@ -38,9 +38,9 @@ tags:
 	}
 </style>
 </head>
-<body > 
+<body >
 <div id = "container">
-	<div id="box">	
+	<div id="box">
 		<div id = "innerbox">			
 		</div>
 	</div>
@@ -52,7 +52,7 @@ tags:
 效果如下：
 
 <div style = "width:100% ;border: 1px solid #ccc;margin-top:5px"><div id = "container" style = "width:200px;height: 300px;display: table;border:1px solid red;margin:5px auto">
-<div id="box" style = "height:50px;width:50px;display: table-cell;vertical-align: middle;">	
+<div id="box" style = "height:50px;width:50px;display: table-cell;vertical-align: middle;">
 <div  id = "innerbox" style = "width: 20px;height: 20px;background:blue;"></div></div></div></div>
 
 ## 使用`{top:50%;position:relative}`来实现垂直居中
@@ -74,15 +74,15 @@ tags:
 
 		height: 10px;
 		width: 10px;
-		position:relative; 
+		position:relative;
 		top:50%;
 		background: blue;
-	
+
 
 	}
 </style>
 </head>
-<body > 
+<body >
 
 <div id = "container">
 	<div id="box">		
@@ -95,5 +95,3 @@ tags:
 ```
 效果如下：
 <div style = "width:100%;border: 1px solid #ccc;margin-top:5px"> <div id = "container" style = "width:200px; height: 300px; border:1px solid green;margin:5px auto"> <div id="box" style = "height: 30px; width: 30px; position:relative; top:50%; background: red; "> </div> </div> </div>
-
-
