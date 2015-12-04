@@ -32,7 +32,7 @@ tags:
 ## 技术调研
 后端：作为一个前端狗，后台果断`NodeJS` + `Express`。
 
-数据库：数据库的话MongoDB在这里不适合（`MongoDB`为NoSQL， 
+数据库：数据库的话MongoDB在这里不适合（`MongoDB`为NoSQL，
 不支持传统的SQL语句），所以选用比较常用的`Mysql`。
 
 环境：运行环境选用`Ubuntu 14.04 LTS`。
