@@ -28,6 +28,7 @@ int * insert_sort(int* data, int num){
 	return data;
 }
 ```
+<!-- more -->
 ### JavaScript实现
 ``` javascript
 function insert_sort(data){
