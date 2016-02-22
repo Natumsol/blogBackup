@@ -14,13 +14,13 @@ tags:
 
 ## 入口函数 `use(ids, callback)`
 ![use](/images/blog/20151221/use.png)
+<!-- more -->
 ## 模块定义函数 `define(factory)`
 ![define](/images/blog/20151221/define.png)
 ## 模块加载函数 `require(id)`
 ![require](/images/blog/20151221/require.png)
 ## 取得模块接口函数 `getModuleExports(module)`
 ![define](/images/blog/20151221/getModuleExports.png)
-<!-- more-->
 # 代码实现
 ## `use(ids, callback)`
 `use`为程序启动的入口，主要干两件事：

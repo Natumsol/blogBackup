@@ -13,6 +13,7 @@ tags:
 依据所选择的增量序列的不同，算法的时间复杂度也有所不同。对于shell本人推荐的$ht = N / 2， hk = h_{k+1} / 2$增量序列来说，时间复杂度为：$O(N ^ {\frac{3}{2}})$。
 <!-- more -->
 ### C语言实现
+<!--more-->
 ```c 
 int * shell_sort(int * data, int num){
 	int i, j, increment, temp;
