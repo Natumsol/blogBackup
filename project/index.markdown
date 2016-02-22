@@ -49,14 +49,15 @@ footer: false
 
 ---
 
-# 4. Nodejs的dataTables中间件
-正在制作中,敬请期待。
+# 4. 基于NodeJS和Mysql的数据库加密系统，支持密文直接查询
+利用NodeJS和Mysql实现了一个直接查询密文的数据库加密/解密系统，背景知识和设计过程见[ 这里 ](/2015/11/07/db-encryption/)，项目地址：[db-encryption](https://github.com/Natumsol/db_encryption)
 
 ---
 
-# 5. A simple and beautiful theme for hexo 
-正在制作中,敬请期待。
-
+# 5. 基于Express + Nodejs的微网站
+主要功能包括微信认证，微信消息回复，网站内容的增删改查，以及流量统计功能。整个系统分为移动端的前台展示和PC端的后台管理两套界面。项目地址为：[微网站](https://github.com/Natumsol/wei-bbs/)
+演示截图：
+![移动端主页](/images/projects/wei-bbs1.jpg)
+![移动端主页](/images/projects/wei-bbs2.jpg)
+![移动端主页](/images/projects/wei-bbs3.jpg)
 ---
-# 6. Gravity
-正在制作中,敬请期待。

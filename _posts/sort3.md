@@ -1,5 +1,6 @@
 title: 常见排序算法的C语言和JavaSript实现之 归并排序
 date: 2016-02-18 21:08:08
+categories: 技术
 tags:
 	- 排序
     - 算法
@@ -9,8 +10,8 @@ tags:
 现在我们来介绍一种很巧妙的排序算法——归并排序。为什么说它巧妙呢，归并排序利用递归来实现分治，从而极大的简化了代码量，排序算法清晰明了，而且速度也是相当的快。归并排序的基本操作是合并两个已排序的表，因为这两个表是已排序的，所以若将输出放到第三个表中，
 
 ### 算法的时间复杂度
-归并的时间复杂度是前三种排序算法里面最好的，为`O(Nlog(N))`
-
+归并的时间复杂度是前三种排序算法里面最好的，为$O(NlogN)$
+<!-- more -->
 ### C语言实现
 ```c 
 void merge_sort(int * data, int num){
@@ -103,6 +104,9 @@ function merge(data, dataTemp, leftPos, rightPos, rightEnd) {
 ```
 
 ### 性能横向测试
+* 操作系统：Windows 8 企业版 64位
+* 软件平台：Visual Studio 10 和 Nodejs v4.2.1
+* 测试数据：相同的`十万条`随机生成的数据
 
 ![C语言归并排序](/images/blog/20160214/5.png)
 ![JavaScript语言归并排序](/images/blog/20160214/6.png)

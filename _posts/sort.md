@@ -13,12 +13,13 @@ tags:
 ### 算法描述
 插入排序这4中排序里面最慢的，但同时也是最简单的排序算法。它理解起来其实很简单，对于N个元素的排序，插入排序由`N - 1`趟组成。对于这P = 1到 P= N - 1趟中的每一趟P而言，插入排序保证从位置0到位置P上的元素均为已排序状态。在第P趟的时候，算法将位置P上的元素向左移动到它在前P+1个元素中的正确位置。
 ### 算法时间复杂度
-因为算法需要进行的循环次数为`1 + 2 + 3 + ... + N = (N + 1) * N / 2`，所以算法的时间复杂度为`O(N^2)`。
+因为算法需要进行的循环次数为$1 + 2 + 3 + ... + N = (N + 1) * N / 2$，所以算法的时间复杂度为$O(N^2)$。
+<!-- more -->
 ### C预言实现
 ``` c
 int * insert_sort(int* data, int num){
 	int i,j, temp;
-	for(i = 0; i < num; i ++){
+	for(i = 1; i < num; i ++){
 		temp = data[i];
 		for(j = i; j > 0 && data[j - 1] > temp; j --){
 			data[j] = data[j - 1]; 
@@ -32,7 +33,7 @@ int * insert_sort(int* data, int num){
 ``` javascript
 function insert_sort(data){
     var temp;
-    for(var i = 0 ; i < data.length; i ++) {
+    for(var i = 1 ; i < data.length; i ++) {
         temp = data[i];
         for(var j = i; j > 0; j --) {
             if(temp < data[j]) {
@@ -45,7 +46,7 @@ function insert_sort(data){
 ```
 
 ### 性能横向比较
-<!-- more -->
+
 * 操作系统：Windows 8 企业版 64位
 * 软件平台：Visual Studio 10 和 Nodejs v4.2.1
 * 测试数据：100000条随机生成的数据
