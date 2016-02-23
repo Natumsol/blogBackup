@@ -2,7 +2,7 @@ title: 常见排序算法的C语言和JavaSript实现之 插入排序
 date: 2016-2-14 17:08:00
 categories: 技术
 tags:
-    - 算法
+    - 算法 
     - 排序
 ---
 

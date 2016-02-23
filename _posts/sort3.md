@@ -2,7 +2,7 @@ title: 常见排序算法的C语言和JavaSript实现之 归并排序
 date: 2016-02-18 21:08:08
 categories: 技术
 tags:
-    - 算法
+    - 算法 
     - 排序
 ---
 ## 归并排序
