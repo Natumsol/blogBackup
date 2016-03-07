@@ -13,7 +13,6 @@ tags:
 归并的时间复杂度是前三种排序算法里面最好的，为$O(NlogN)$
 <!-- more -->
 ### C语言实现
-<!--more-->
 ```c 
 void merge_sort(int * data, int num){
     int * dataTemp = (int *) malloc(sizeof(int) * num);

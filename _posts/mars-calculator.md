@@ -8,7 +8,7 @@ tags:
 最近师兄忙着刷算法题，我呢耳濡目染之下也跟着凑热闹，哈哈。虽然牺牲了不少玩的时间，就当为明年找实习做准备咯。
 
 ##  题目 
-自定义运算符 @,#,$,&,并且优先级@>#>$>&,利用下面的计算法则，计算出一个给定的字符串表示的表达式的值，返回整型结果。
+自定义运算符 `@,#,$,&,`并且优先级`@ > # > $ > &`,利用下面的计算法则，计算出一个给定的字符串表示的表达式的值，返回整型结果。
 x@y = (x-1)\*(y+1);
 x#y = (2\*x+5)\*(3\*y+60)
 x$y = (x+1)\*(2\*x+3)\*(y-1)\*(2\*y-3)
@@ -82,9 +82,9 @@ function toReversePolish(str) {
 			output.push(parseInt(input[i]));
 		} else {
 			if (stackTemp.length != 0) {
-				if (operator[input[i]] > operator[stackTemp[stackTemp.length - 1]]) {//当前运算符的优先级比栈定元素低，则当前运算符进栈
+				if (operator[input[i]] > operator[stackTemp[stackTemp.length - 1]]) {//当前运算符的优先级比栈定元素高，则当前运算符进栈
 					stackTemp.push(input[i]);
-				} else {当前运算符的优先级不比栈定元素低，则栈定元素出栈，当前运算符进栈
+				} else {当前运算符的优先级不比栈定元素高，则栈定元素出栈，当前运算符进栈
 					output.push(stackTemp.pop());
 					stackTemp.push(input[i]);
 				}
