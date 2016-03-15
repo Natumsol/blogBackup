@@ -2,14 +2,14 @@ title: 常见排序算法的C语言和JavaSript实现之 快速排序
 date: 2016-02-20 12:34:41
 categories: 技术
 tags:
-    - 算法 
+    - 算法
     - 排序
 ---
 ## 快速排序
 ### 算法描述
-快速排序是在事件中已知的最快排序算法，该算法之所以这么快是因为其内部高度优化的内部循环。它的最坏情形耗时$O(N^2)$，但是稍加修正就可以避免这种情形。和归并排序类似，快速排序也是一种分治的递归排序。对于待排数组`S`，快速排序可以简单的秒速为：
+快速排序是在事件中已知的最快排序算法，该算法之所以这么快是因为其内部高度优化的内部循环。它的最坏情形耗时$O(N^2)$，但是稍加修正就可以避免这种情形。和归并排序类似，快速排序也是一种分治的递归排序。对于待排数组`S`，快速排序可以简单的描述为：
 
-1. 如果`S`中的元素个数问哦0或1，则返回。
+1. 如果`S`中的元素个数为0或1，则返回。
 2. 取`S`中任意一元素`v`，称之为枢纽元（pivot）。
 3. 将$S-\\{v\\}$(S中的其余元素)分成两个不相交的集合：$S_1= \\{x \in S - \\{v\\} | x \leq v\\}$ 和 $S_2= \\{x \in S - \\{v\\} | x \geq v\\}$。
 4. 返回`quick_sort(S1)`后，继随`v`，继而`quick_sort(S2)`。
@@ -29,21 +29,21 @@ void swap(int* p, int* q) {
 
 int media3(int *data, int left, int right){
     int center = (left + right) / 2;
-    
+
     if(data[left] > data[center]) {
         swap(&data[left], &data[center]);
-    } 
+    }
     if(data[left] > data[right]) {
         swap(&data[left], &data[right]);
     }
     if(data[center] > data[right]) {
         swap(&data[center], &data[right]);
     } // 将data[left], data[center], data[right]从小到大排好序
-    
+
     swap(&data[center], &data[right - 1]); // 将pivot放到倒数第二个位置
-    
+
     return data[right - 1];
-    
+
 }
 
 void quick_sort(int* data, int left, int right){
@@ -135,7 +135,7 @@ function insert_sort(data, left, right){
         }
     }
     return data;
-} 
+}
 
 ```
 

@@ -84,7 +84,7 @@ function toReversePolish(str) {
 			if (stackTemp.length != 0) {
 				if (operator[input[i]] > operator[stackTemp[stackTemp.length - 1]]) {//当前运算符的优先级比栈定元素高，则当前运算符进栈
 					stackTemp.push(input[i]);
-				} else {当前运算符的优先级不比栈定元素高，则栈定元素出栈，当前运算符进栈
+				} else {//当前运算符的优先级不比栈定元素高，则栈定元素出栈，当前运算符进栈
 					output.push(stackTemp.pop());
 					stackTemp.push(input[i]);
 				}
