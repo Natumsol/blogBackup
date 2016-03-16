@@ -14,7 +14,7 @@ The program 'nodejs' is currently not installed. You can install it by typing:su
 但是直接在`/usr/local/bin`下运行`./node`是可以的，真的是百思不得其解，不知道是哪里出现了问题。以为是`NodeJS`版本有问题，于是通过源码安装的方式，花费了N久的时间去编译，最后居然...还是不行⊙﹏⊙b汗，真是呵呵哒...
 
 于是回过头来重新看错误信息，发现提示的信息为`nodejs`没有安装，我明明输入的是`node`啊，怎么执行的是`nodejs`呢？在电石火光的一瞬间，我猛的一拍大腿，突然醒悟:这都是自己之前作的死啊...我是怎么作死的，容我慢慢道来。
-
+<!--more -->
 ## 原因分析
 之前重转系统的时候，为了方便，直接用`sudo apt-get install nodejs`的方式来安装`NodeJS`，但是没想到运行的时候要键入命令`nodejs`，而不是我们在Windows下的`node`命令，真不习惯。于是我自作聪明的想到了`alias`命令，通过在`~/.bashrc`文件加入`alias node='nodejs'`来实现重命名...
 ![原因分析](/images/blog/20160314/1.png)
