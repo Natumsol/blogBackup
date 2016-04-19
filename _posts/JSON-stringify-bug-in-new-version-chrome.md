@@ -1,17 +1,17 @@
 title: 新版本Chrome序列化performanceTiming的bug
 date: 2015-06-15 15:06:32
 categories: 技术
-tags: 
+tags:
      - Chrome
      - JSON
 ---
 昨天在Chrome 里序列化`window.performance.timing`对象时发现了一个Bug。此Bug只出现在新版的Chrome（Chrome 41+）中，问题重现如下：
 
-## bug说明
+# bug说明
 ``` javascript
 //	Google Chrome	45.0.2427.7 (正式版本) dev-m （64 位）
 //	修订版本	3dbfc97efe069741d1507c995573283ce6912406-refs/branch-heads/2427@{#10}
-//	操作系统	Windows 
+//	操作系统	Windows
 //	Blink	537.36 (@196784)
 //	JavaScript	V8 4.5.42
 // 	Flash	18.0.0.160
@@ -25,7 +25,7 @@ JSON.stringify(window.performance.timing)//bug出现，输出为"{}"
 
 中文意思大概是`JSON.stringify`设计成不会序列化原型链上的DOM属性，而Chrome 41+后，`window.performance.timing`对象变为DOM原型链上的属性了，故不会被序列化。
 
-## 解决方案
+# 解决方案
 这个bug解决起来也不难，重新写一个stringify函数代替原生的JSON.stringify就可以了，具体代码为：
 
 ```javascript
@@ -48,14 +48,14 @@ function stringifyDOMObject(object)
 }
 ```
 
-## 测试结果
-```javascript 
+# 测试结果
+```javascript
 stringifyDOMObject(window.performance.timing)
 //正常序列化为"{"navigationStart":1434361277562,"unloadEventStart":1434361277688,"unloadEventEnd":1434361277688,"redirectStart":0...}"
 ```
 
 ----
-## 更新
+# 更新
 在实际中测试发现，如果被序列化的对象有`toJSON`函数属性，就会造成无法正常序列化的问题。
 Bug fixed后的代码如下：
 ```javascript

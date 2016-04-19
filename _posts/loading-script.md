@@ -17,5 +17,5 @@ tags:
 * `<script defer = "defer">`：脚本的获取是异步的，执行是同步的。脚本加载不阻塞页面的解析，脚本在获取完后并不立即执行，而是等到`DOM`ready之后才开始执行。
 * `<script async = "async">`: 脚本的获取是异步的，执行是同步的。但是和`<script defer = "defer">`的不同点在于脚本获取后会立刻执行，这就会造成脚本的执行顺序和页面上脚本的排放顺序不一致，可能造成脚本依赖的问题。
 
-## 参考文献：
+# 参考文献：
 > [Asynchronous and deferred JavaScript execution explained](http://peter.sh/experiments/asynchronous-and-deferred-javascript-execution-explained/)

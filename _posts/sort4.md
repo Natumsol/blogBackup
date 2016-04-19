@@ -5,8 +5,8 @@ tags:
     - 算法
     - 排序
 ---
-## 快速排序
-### 算法描述
+# 快速排序
+## 算法描述
 快速排序是在事件中已知的最快排序算法，该算法之所以这么快是因为其内部高度优化的内部循环。它的最坏情形耗时$O(N^2)$，但是稍加修正就可以避免这种情形。和归并排序类似，快速排序也是一种分治的递归排序。对于待排数组`S`，快速排序可以简单的描述为：
 
 1. 如果`S`中的元素个数为0或1，则返回。
@@ -16,9 +16,9 @@ tags:
 
 由于对枢纽元的处理的不同，第三步分割的描述不是唯一的，因而这就成了设计上的一个决策。
 <!-- more -->
-### 算法的时间复杂度
+## 算法的时间复杂度
 算法平均时间复杂度为：$O(NlogN)$
-## C语言实现
+# C语言实现
 ```c C语言版的快速排序算法
 void swap(int* p, int* q) {
     int temp;
@@ -80,7 +80,7 @@ int * insert_sort(int* data, int num){
 }
 ```
 
-## JavaScript实现
+# JavaScript实现
 ```javascript JavaScript版快速排序实现
 function swap(data, pos1, pos2){
     var temp = data[pos1];
@@ -139,7 +139,7 @@ function insert_sort(data, left, right){
 
 ```
 
-## 横向性能测试
+# 横向性能测试
 * 操作系统：Windows 8 企业版 64位
 * 软件平台：Visual Studio 10 和 Nodejs v4.2.1
 * 测试数据：相同的`一千万条`随机生成的数据

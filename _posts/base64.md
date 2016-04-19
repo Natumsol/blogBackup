@@ -4,10 +4,10 @@ categories: 技术
 tags:
 	- Base64
 ---
-## 简介
+# 简介
 `Base64`是一种基于64个可打印字符来表示二进制数据的表示方法。由于2的6次方等于64，所以每6个比特为一个单元，对应某个可打印字符。三个字节有24个比特，对应于4个`Base64`单元，即3个字节需要用4个可打印字符来表示。它可用来作为电子邮件的传输编码。在`Base64`中的可打印字符包括字母`A-Z`、`a-z`、数字`0-9`，这样共有62个字符，此外的两个可打印符号在不同的系统中而不同，一般为`+`和`/`。
 
-## 转换原理
+# 转换原理
 Base64的直接数据源是二进制序列(Binary Sequence)。当然，你也可以将图片、文本和音视频转换成二进制序列，再然后转换为Base64编码。我们这里讨论的是如何将二进制转换为Base64编码，对于如何将图片，文本和音视频转换为二进制序列敬请期待。
 
 在转换前，先定义一张索引表，这张表规定了如何转换。
@@ -15,7 +15,7 @@ Base64的直接数据源是二进制序列(Binary Sequence)。当然，你也可
 转换的时候我们先将二进制序列分组，每6个比特为一组。但是如果编码的字节数不能被3整除，那么最后就会多出1个或两个字节，可以使用下面的方法进行处理：先使用0字节值在末尾补足，使其能够被3整除，然后再进行base64的编码。在编码后的base64文本后加上一个或两个'='号，代表补足的字节数。也就是说，当最后剩余一个八位字节（一个byte）时，最后一个6位的base64字节块有四位是0值，最后附加上两个等号；如果最后剩余两个八位字节（2个byte）时，最后一个6位的base字节块有两位是0值，最后附加一个等号。 参考下表：
 ![索引](/images/blog/20151118/2.png)
 <!-- more -->
-## 用JavaScript实现Base64
+# 用JavaScript实现Base64
 
 原理明白了以后，实现起来就很容易了。
 ```javascript
@@ -69,7 +69,7 @@ define(function(require, exports, module) {
 
     /**
      * @description 将字符转换为二进制序列
-     * @param  {String} str 
+     * @param  {String} str
      * @return {String}    
      */
     function stringToBin(str) {
@@ -82,7 +82,7 @@ define(function(require, exports, module) {
     }
     /**
      * @description 将二进制序列转换为字符串
-     * @param {String} Bin 
+     * @param {String} Bin
      */
     function BinToStr(Bin) {
         var result = "";
@@ -99,7 +99,7 @@ define(function(require, exports, module) {
     }
 })
 ```
-## 将图片数据进行Base64编码
+# 将图片数据进行Base64编码
 将图片数据转换为Base64，首先要获取到图片的二进制数据。图片的二进制数据可以通过`canvas`接口得到。具体实现为：
 ```javascript
 function getCanvas(w, h) {
@@ -139,7 +139,7 @@ function img2Base64(img) {
 
 
 
-## 将图片Base64数据进行解码
+# 将图片Base64数据进行解码
 解码是编码的逆过程。过程大致为：
 
 1. 将图片的Base64信息进行解码，得到包含图片像素信息和宽高度信息的二进制序列；
@@ -174,7 +174,7 @@ function base642img(data) {
 
 ```
 
-## DEMO演示
+# DEMO演示
 在线演示：[ DEMO ](/project/base64)
 源码请移步[ Github ](https://github.com/Natumsol/base64)
 ![截图](/images/blog/20151118/1.png)

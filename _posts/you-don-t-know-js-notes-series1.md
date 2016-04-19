@@ -3,10 +3,10 @@ date: 2015-12-03 10:51:44
 categories: 技术
 tags: JavaScript
 ---
-## 前言
+# 前言
 这里记录着自己阅读*You don't know JS*系列丛书的一些心得体会，也算是自己学习前端一年多，对`JavaScript`知识的一个梳理吧。
 *高能预警：文章较长且琐碎，请自备板凳瓜子～*
-## Types（类型）
+# Types（类型）
 > Variables don’t have types, but the values in them do。
 
 这句话的意思是说：变量是没有类型的，变量里面存的值才是有类型的。比如我声明一个变量`var a;`，此时`a`是不具有任何类型信息的。如果我给`a`赋值一个字符串`a = "Hello, World"`， 那么`typeof a`得到的信息`string`表示的是`a`里面的值`"Hello, World"`的类型信息。如果我现在重新给`a`赋值，`a = 0`，因为`a`里面存的值的类型已经发生变化，那么`typeof a`得到的信息也变成相应的`number`。这和静态语言比如`C/C++/Java`是不一样的，`C/C++/Java`在定义变量就指定了变量的类型，每个变量只能存储和自己类型匹配的值。
@@ -26,7 +26,7 @@ console.log(b);//Uncaught ReferenceError: b is not defined(…)
 ```
 有时候为了判断某个变量（比如`a`）是否为`undefined`，一般的做法是`if(a != undefined)`，但是这样存在一个问题，如果`a`没有申明过呢？这样就会造成解释器报错，为了防止这种情况发生，我们可以利用类型判断操作符`typeof`来进行安全的判断：`if(typeof a != undefined)`，`typeof`对与没有申明的变量也能安全的处理，并返回`undefined`。
 <!-- more -->
-## Values（值）
+# Values（值）
 > Using delete on an array value will remove that slot from the array, but even if you remove
 the final element, it does not update the length property, so be careful!
 
@@ -69,14 +69,14 @@ console.log(x); // Object {x: 1}
 ```
 `foo()`函数给`obj`重新赋值了，但是并没有改变外层定义的`obj`。
 
-## Native（原生类型）
+# Native（原生类型）
 >Primitive values don’t have properties or methods, so to access .length or .toString() you need an object wrapper around the value. Thankfully, JS will automatically box (aka wrap) the primitive value to fulfill such accesses
 
 这句话的意思是：基本数据类型并没有属性或方法，当你需要在基本数据类型上执行诸如`.length`或`.toString()`的操作的时候，你需要一个对象`Object`来包装这个基本数据类型。令人欣慰的是，在执行这样的操作的视乎，`JavaScript`会自动将其进行包装。
 
 所以，对于一个字符串，我们是可以直接获取字符串的长度的，也可以执行许多字符串的方法，比如`.indexOf()`等等。
 
-## Coercion（自动类型转换）
+# Coercion（自动类型转换）
 自动类型转换比较复杂，为了说明他们各自的转换规则，我绘制了一张脑图来说明(图片较大，请保存下来用1:1的比例查看)：
 ![自动类型转换](/images/blog/20151204/coercion.png)
 

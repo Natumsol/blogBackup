@@ -11,8 +11,8 @@ tags:
 
 最近在读Jquery的源码，遇到了一些正则表达式，因为之前接触的很少，所以jQuery里面复杂的正则给我造成了不小的困扰。经过查资料+实验，算是搞清楚了，特罗列出来，总结一下。
 
-## 匹配数字 
-```javascript 
+# 匹配数字
+```javascript
 // Used for matching numbers
 core_pnum = /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,
 
@@ -26,7 +26,7 @@ core_pnum = /[+-]?(?:\d*\.|)\d+(?:[eE][+-]?\d+|)/.source,
 
 整个正则表达的意思就是可以同时匹配小数和科学计数法两种计数模式。
 
-## 匹配HTML标签和ID  #
+# 匹配HTML标签和ID  #
 ```javascript
 // A simple way to check for HTML strings
 // Prioritize #id over <tag> to avoid XSS via location.hash (#9521)
@@ -42,7 +42,7 @@ rquickExpr = /^(?:\s*(<[\w\W]+>)[^>]*|#([\w-]*))$/,
 - `#([\w-]*)`用来匹配带上`#`的任意字符，包括连字符`-`与下划线`_`。
 
 
-## 匹配HTML单标签  #
+# 匹配HTML单标签  #
 ```javascript
 // Match a standalone tag
 rsingleTag = /^<(\w+)\s*\/?>(?:<\/\1>|)$/,

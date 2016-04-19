@@ -17,18 +17,18 @@ tags:
 
 好了，说了这么多废话，现在就开始着手搭建开发环境了。
 
-## 安装WebStrom 8 和 NodeJS
+# 安装WebStrom 8 和 NodeJS
 
 WebStorm 最新版：[下载链接](http://www.jetbrains.com/webstorm/) &nbsp;NodeJs 最新版：[下载链接](http://www.nodejs.org/download/)
 
 
-## 配置NodeJs运行环境
+# 配置NodeJs运行环境
 打开Webstorm设置界面，选中`Node.js and NPM`选项，如果你安装了
 `NodeJs`，软件会自动找到NodeJS的安装路径，然后按下图进行配置。
 ![运行环境配置](/images/blog/node_setup.jpg)
 
 
-## 运行一个NodeJS程序
+# 运行一个NodeJS程序
 - 新建一个工程文件夹`test`,然后新建一个文件`index.js`,编写代码如下：
 ```javascript
 var http = require("http");//引入依赖
@@ -41,9 +41,7 @@ http.createServer(function(request,response){
 
 ```
 
-## 执行	
+# 执行	
 
 ![执行成功](/images/blog/node_success.jpg)
 ![执行成功](/images/blog/node_result.jpg)
-
-

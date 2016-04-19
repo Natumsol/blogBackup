@@ -31,6 +31,9 @@ tags:
 
 因为`Lantern`启动的时候会重新写入配置文件，之前的配置文件会被覆盖掉。我试过将配置文件设定为只读属性，不让`Lantern`覆盖，但是这样`Lantern`会启动失败。。。汗。在`lantern`的移动版本没到来之前，凑合着用吧~
 
+更新
+-------
+`Lantern`的 [安卓版](https://raw.githubusercontent.com/getlantern/lantern-binaries/master/lantern-installer-beta.apk)已经正式上线了，大家可以不用这个折腾了~
 参考资料
 --------
 
