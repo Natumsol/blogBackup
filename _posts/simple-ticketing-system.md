@@ -3,7 +3,7 @@ date: 2015-09-06 09:39:38
 categories: 技术
 tags:
 	- 算法
-	- javascript
+	- JavaScript
 ---
 # 题目
 

@@ -2,7 +2,7 @@ title: 利用jQuery Validation Engine 校验隐藏元素
 date: 2015-08-13 16:46:39
 categories: 技术
 tags:
-	- javascript
+	- JavaScript
 ---
 在前端的石器时代，表单验证一直是`jquery validation`的天下。如今的前端正处于战国时代，群雄并起，`jquery validation`这货实在不好用。特别是规定每个`input`标签要有一个出错信息容器，这常常迫使我牺牲页面的整洁和优雅，为每个`input`标签加个尾巴。
 

@@ -2,7 +2,7 @@ title: css三角形生成器
 date: 2015-11-05 08:56:39
 categories: 技术
 tags:
-	- css
+	- CSS
 	- 三角形
 ---
 # 简介

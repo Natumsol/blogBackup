@@ -5,7 +5,7 @@ date: 2014-07-23 13:45:52 +0800
 comments: true
 categories: 技术
 tags:
-	- javascript
+	- JavaScript
 	- 布尔运算
 ---
 JavaScript中的逻辑运算符和C++/Java语言中的逻辑操作符不一样。在C++/Java语言中，逻辑表达式的值一定是一个逻辑值`true`或`false`，但是在JavaScript中情况有所不同，逻辑表达式的值可以是`true`和`false`，也可以是对象`Object`。

@@ -5,7 +5,7 @@ date: 2014-08-03 23:21:44 +0800
 comments: true
 categories: 技术
 tags:
-	- javascript
+	- JavaScript
 	- 游戏
 	- 2048
 ---

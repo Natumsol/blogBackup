@@ -2,8 +2,8 @@ title: 基于NodeJS和Mysql的数据库加密系统的设计与实现
 date: 2015-11-07 15:30:21
 categories: 技术
 tags:
-    - NodeJs
-    - Mysql
+    - NodeJS
+    - MySQL
     - 数据库加密
 ---
 # 起因

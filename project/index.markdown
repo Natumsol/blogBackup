@@ -1,10 +1,12 @@
 ---
-layout: page
-title: ""
+layout: "project"
+title: "项目"
 date: 2014-07-05 23:20
 comments: true
 sharing: false
 footer: false
+header-img: "images/code-bg.jpg"
+description: "Just For Fun"
 ---
 # 1. 2048
 这是一个移动端很火的游戏的网页版，纯JS制作，基本功能已实现。淡入淡出，消除等动画效果还未实现，留给以后慢慢改进吧。
@@ -44,20 +46,6 @@ footer: false
 
 ---
 
-# 3. 前端资料整理
-花了点时间整理了近一年来收集的前端学习资料，不间断更新，详情请移步[ MY BOOKMARKS](/project/MyFavorite/index.html)
-
----
-
-# 4. 基于NodeJS和Mysql的数据库加密系统，支持密文直接查询
+# 3. 数据库加密系统
 利用NodeJS和Mysql实现了一个直接查询密文的数据库加密/解密系统，背景知识和设计过程见[ 这里 ](/2015/11/07/db-encryption/)，项目地址：[db-encryption](https://github.com/Natumsol/db_encryption)
 
----
-
-# 5. 基于Express + Nodejs的微网站
-主要功能包括微信认证，微信消息回复，网站内容的增删改查，以及流量统计功能。整个系统分为移动端的前台展示和PC端的后台管理两套界面。项目地址为：[微网站](https://github.com/Natumsol/wei-bbs/)
-演示截图：
-![移动端主页](/images/projects/wei-bbs1.jpg)
-![移动端主页](/images/projects/wei-bbs2.jpg)
-![移动端主页](/images/projects/wei-bbs3.jpg)
----

@@ -4,7 +4,7 @@ title: "给SVG DOM增加class属性的三种解决方案"
 date: 2014-11-21 21:19:43
 categories: 技术
 tags:
-	- javascript
+	- JavaScript
 ---
 # 问题说明
 最近因为项目中要用到`highcharts`来绘图，所以理所当然的要学习svg的相关知识。在操作svg元素节点过程中，发现了利用jQuery的`addClass`不能给svg元素增加class,这是我很好奇，同样是DOM节点，为什么就不行呢？经过查资料找到了事情的真相[1] ([戳我](http://forum.jquery.com/topic/adding-svg-class-classname-support-to-jquery))。

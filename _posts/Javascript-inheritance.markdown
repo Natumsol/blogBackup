@@ -5,7 +5,7 @@ date: 2014-07-08 22:35:02 +0800
 comments: true
 categories: 技术
 tags:
-	- javascript
+	- JavaScript
 	- 原型链
 	- 继承
 ---

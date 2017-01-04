@@ -5,7 +5,7 @@ date: 2014-09-12 16:52:17 +0800
 comments: true
 categories: 技术
 tags:
-	- nodejs
+	- NodeJS
 ---
 
 如果你还在命令行里敲`node **.js`,`node --debug-brk=5858 **.js`,`supervisor **.js`来运行和调试NodeJs程序，那么你Out啦~~。用WebStorm + Nodejs 可以完美搭建NodeJs的集成开发环境，比直接在命令行里敲命令或者及利用node-inspector或eclipse等工具方便强大的多。个人认为具体优点如下：
