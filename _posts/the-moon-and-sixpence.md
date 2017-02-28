@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "读《月亮与六便士》"
+title: "月亮与六便士"
 date: 2017-02-28 09:03:27
 comments: true
 categories: 读书
