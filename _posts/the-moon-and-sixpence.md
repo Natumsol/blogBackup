@@ -7,6 +7,9 @@ categories: 读书
 tags:
 	- 随笔
 ---
+> We are all in the gutter，but some of us are looking at the stars.
+> 我们都身处阴沟之中，但仍有人在仰望星空。
+> ——Oscar Wilde （奥斯卡·王尔德）
 
 远离人性，才能成就神性。
 
